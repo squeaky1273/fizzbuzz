@@ -22,23 +22,19 @@ test('FIZZBUZZ', () => {
 // isFizzy
 test('isFizzy', () => {
     expect(fb.isFizzy(3)).toBe(true)
+    expect(fb.isFizzy(4)).toBe(false)
 })
 
 // isBuzzy
 test('isBuzzy', () => {
     expect(fb.isBuzzy(5)).toBe(true)
+    expect(fb.isBuzzy(3)).toBe(false)
 })
 
 // fizzyBuzzy
 test('fizzyBuzzy', () => {
     expect(fb.fizzyBuzzy(3)).toBe('fizz')
-})
-
-test('fizzyBuzzy', () => {
     expect(fb.fizzyBuzzy(5)).toBe('buzz')
-})
-
-test('fizzyBuzzy', () => {
     expect(fb.fizzyBuzzy(15)).toBe('fizzbuzz')
 })
 
